@@ -1,0 +1,2 @@
+#3.7	Write SQL query to find the number of murders in ascending order in district and yearwise.
+SELECT sum(Murder) AS No_of_Murders ,DISTRICT,`Year` FROM district_wise_crimes_committed_against_st_2001_2012 group by Murder ,DISTRICT,`Year` order by `Year`, DISTRICT,Murder ;

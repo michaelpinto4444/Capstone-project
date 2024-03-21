@@ -1,0 +1,3 @@
+#3.5	Write SQL query to find the highest number of dacoity/robbery in which district.
+SELECT MAX(Dacoity) AS Higher_Dacoity,DISTRICT FROM district_wise_crimes_committed_against_st_2001_2012 GROUP BY DISTRICT, Dacoity ORDER BY Higher_Dacoity DESC LIMIT 1;
+SELECT MAX(Robbery) AS Higher_Robbery,DISTRICT FROM district_wise_crimes_committed_against_st_2001_2012 GROUP BY DISTRICT, Robbery ORDER BY Higher_Robbery DESC LIMIT 1;

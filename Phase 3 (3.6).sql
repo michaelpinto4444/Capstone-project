@@ -1,0 +1,2 @@
+#3.6	Write SQL query to find in which districts(All) the lowest number of murders happened
+SELECT MIN(Murder) AS Lowest_murders , DISTRICT FROM district_wise_crimes_committed_against_st_2001_2012 GROUP BY Murder, DISTRICT order by Lowest_murders;

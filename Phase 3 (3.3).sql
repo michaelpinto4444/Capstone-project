@@ -1,0 +1,3 @@
+# 3.3)Write SQL query to find All the lowest number of rapes & Kidnappings that happened in which state, District, and year
+SELECT MIN(Rape) AS Min_Rapes, `Year`, `STATE/UT`, DISTRICT FROM district_wise_crimes_committed_against_women_2001_2012 GROUP BY `Year`, `STATE/UT`, DISTRICT ORDER BY Min_Rapes ASC;
+SELECT MIN(`Kidnapping and Abduction`) AS Min_Kidnapping, `Year`, `STATE/UT`, DISTRICT FROM district_wise_crimes_committed_against_women_2001_2012 GROUP BY `Year`, `STATE/UT`, DISTRICT ORDER BY Min_Kidnapping ASC;
